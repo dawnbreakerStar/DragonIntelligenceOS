@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{E862182E-99F8-4302-B1DE-D6A584E64A78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{D4016BE3-0C36-4824-A73E-7D9E0B3DB35D}"
 	ProjectSection(SolutionItems) = preProject
-		include\global.h = include\global.h
+		Include\global.h = Include\global.h
 	EndProjectSection
 EndProject
 Global
