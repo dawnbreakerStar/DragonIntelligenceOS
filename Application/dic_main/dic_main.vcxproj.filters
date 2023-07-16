@@ -18,5 +18,13 @@
     <ClCompile Include="..\..\Source\dic_main\main.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\dic_main\clock.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\dic_main\clock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

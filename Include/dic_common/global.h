@@ -189,7 +189,7 @@ typedef double			   F64;
 ** 
 **.EH--------------------------------------------------------------------------------------
 */
-inline intCmpHandler(const void* x, const void* y)
+inline int IntCmpHandler(const void* x, const void* y)
 {
 	return *(int*)(x) - *(int*)y;
 }
@@ -218,7 +218,7 @@ inline intCmpHandler(const void* x, const void* y)
 **
 **.EH--------------------------------------------------------------------------------------
 */
-inline strCmpHandler(const void* x, const void* y)
+inline int StrCmpHandler(const void* x, const void* y)
 {
 	return strcmp(x, y);
 }
