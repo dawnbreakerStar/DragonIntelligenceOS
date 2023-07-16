@@ -4,13 +4,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{D4016BE3-0C36-4824-A73E-7D9E0B3DB35D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{3E4B209D-B24C-416B-8D79-8E6E90790E28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dic_main", "dic_main", "{E9C4894C-7979-4F45-B744-2FB90C747A54}"
 	ProjectSection(SolutionItems) = preProject
-		Include\global.h = Include\global.h
+		Source\dic_main\clock.cpp = Source\dic_main\clock.cpp
+		Source\dic_main\clock.h = Source\dic_main\clock.h
+		Source\dic_main\main.cpp = Source\dic_main\main.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dic_common", "dic_common", "{67D96620-6D26-454F-8012-60DCCF4FD881}"
+	ProjectSection(SolutionItems) = preProject
+		Include\dic_common\global.h = Include\dic_common\global.h
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9C4894C-7979-4F45-B744-2FB90C747A54} = {3E4B209D-B24C-416B-8D79-8E6E90790E28}
+		{67D96620-6D26-454F-8012-60DCCF4FD881} = {D4016BE3-0C36-4824-A73E-7D9E0B3DB35D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B076078-6D57-46D4-BA65-449DECEBF7B0}

@@ -61,6 +61,13 @@
 #endif
 
 /*-----------------------------------------------------------------------------------------
+**										   Include
+**-----------------------------------------------------------------------------------------
+*/
+#include <functional>
+#include <iostream>
+
+/*-----------------------------------------------------------------------------------------
 **									   Type Definition
 **-----------------------------------------------------------------------------------------
 */
@@ -103,8 +110,8 @@ typedef double			   F64;
 #define UNUSED(x)		(void)x												/* 消除未使用变量引起的警告 */
 #define PASS																/* 消除未操作引起的警告 */
 #define LOOP(x, len)	(x >= len ? (x - len) : x)							/* 游标循环操作 */
-#define FREE_OBJECT(x)	if (NULL != x) {free(x); x = NULL;} else {PASS}		/* 释放对象内存 */
-#define FREE_ARRAY(x)	if (NULL != x) {free(x); x = NULL;} else {PASS}		/* 释放数组内存 */
+#define FREE_OBJECT(x)	if (NULL != x) {delete x; x = NULL;} else {PASS}	/* 释放对象内存 */
+#define FREE_ARRAY(x)	if (NULL != x) {delete[] x; x = NULL;} else {PASS}	/* 释放数组内存 */
 
 /* 大小端转换 */
 /* Swap 2 bytes, 16 bit values */
